@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header wrapper">
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </div>
+        <nav class="navigation">
+          <button class="close-btn">
+            <svg
+              width="32"
+              height="31"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <g fill="#00001A" fill-rule="evenodd">
+                <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+                <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+              </g>
+            </svg>
+          </button>
+          <ul>
+            <li><a href="" class="navigation__link">Home</a></li>
+            <li><a href="" class="navigation__link">New</a></li>
+            <li><a href="" class="navigation__link">Popular</a></li>
+            <li><a href="" class="navigation__link">Trending</a></li>
+            <li><a href="" class="navigation__link">Categories</a></li>
+          </ul>
+        </nav>
+        <button class="open-btn">
+          <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#00001A" fill-rule="evenodd">
+              <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+              <path d="M0 0h40v3H0z" />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero wrapper">
+        <div class="left-col">
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="lego image" />
+          <div class="intro__section">
+            <h1 class="intro__heading">The Bright Future of Web 3.0?</h1>
+            <div class="intro__content">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <a href="#" class="read-more__link"> Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="right-col">
+          <div class="news__panel">
+            <h1>New</h1>
+            <div class="news__block">
+              <h2>Hydrogen VS Electric Cars</h2>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <hr />
+            <div class="news__block">
+              <h2>The Downsides of AI Artistrys</h2>
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+            <hr />
+            <div class="news__block">
+              <h2>Is VC Funding Drying Up?</h2>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="top-news wrapper">
+        <div class="top-news__1">
+          <img
+            src="./assets/images/image-retro-pcs.jpg"
+            alt="evolving retro pc"
+          />
+          <div>
+            <h3 class="top-news__heading">Reviving retro PCs</h3>
+            <p class="top-news__text">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="top-news__2">
+          <img
+            src="./assets/images/image-top-laptops.jpg"
+            alt="evolving retro pc"
+          />
+          <div>
+            <h3 class="top-news__heading">Top 10 Laptops of 2022</h3>
+            <p class="top-news__text">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <div class="top-news__3">
+          <img
+            src="./assets/images/image-gaming-growth.jpg"
+            alt="gaming growth"
+          />
+          <div>
+            <h3 class="top-news__heading">The Growth of Gaming</h3>
+            <p class="top-news__text">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://lu.linkedin.com/in/jean-gustave-nsabiyera-b8018951"
+        target="_blank"
+        >Jean Gustave NSABIYERA</a
+      >.
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      let tl = createTImeline();
+      const navigation = document.querySelector(".navigation");
+      const navigationLinks = gsap.utils.toArray(
+        document.querySelectorAll(".navigation__link")
+      );
+      let mobileBreakpointReached = window.screen.width < 930;
+      tl.to(navigation, {
+        x: 0,
+      }).to(navigationLinks, {
+        x: 0,
+        stagger: 0.1,
+        duration: 0.3,
+      });
+      document.querySelector(".open-btn").addEventListener("click", () => {
+        tl.play();
+      });
+      document.querySelector(".close-btn").addEventListener("click", () => {
+        tl.reverse();
+      });
+
+      function createTImeline() {
+        return gsap.timeline({
+          default: {
+            duration: 1,
+          },
+          paused: true,
+        });
+      }
+
+      window.addEventListener("resize", () => {
+        if (window.matchMedia("(min-width: 930px)").matches) {
+          navigation.style.transform = "none";
+          navigationLinks.forEach((navLink) => {
+            navLink.style.transform = "none";
+          });
+        } else {
+          navigation.style.transform = "translate(100vw,0px)";
+          navigationLinks.forEach((navLink) => {
+            navLink.style.transform = "translate(-100%, 0px)";
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
