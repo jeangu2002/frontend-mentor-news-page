@@ -114,7 +114,7 @@ li {
   }
 
   &__link {
-    transition: all 0.6;
+    transition: all 300ms;
     transform: translateX(-100%);
     display: inline-block;
     &:hover {
@@ -194,9 +194,10 @@ li {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.4rem;
-  transition: all 0.6;
+  transition: all 300ms;
   &:hover {
     color: white;
+    background-color: var(--very-dark-blue);
   }
 }
 
@@ -262,6 +263,12 @@ li {
 
     &__text {
       color: var(--grayish-blue);
+    }
+  }
+  &__heading > a {
+    transition: all 300ms;
+    &:hover {
+      color: var(--soft-orange);
     }
   }
 }

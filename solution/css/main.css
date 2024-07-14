@@ -108,7 +108,7 @@ li {
   overflow: hidden;
 }
 .navigation__link {
-  transition: all 0.6;
+  transition: all 300ms;
   transform: translateX(-100%);
   display: inline-block;
 }
@@ -195,10 +195,11 @@ li {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.4rem;
-  transition: all 0.6;
+  transition: all 300ms;
 }
 .read-more__link:hover {
   color: white;
+  background-color: var(--very-dark-blue);
 }
 
 .news__panel {
@@ -263,4 +264,10 @@ li {
 }
 .top-news__1__text, .top-news__2__text, .top-news__3__text {
   color: var(--grayish-blue);
+}
+.top-news__heading > a {
+  transition: all 300ms;
+}
+.top-news__heading > a:hover {
+  color: var(--soft-orange);
 }/*# sourceMappingURL=main.css.map */
